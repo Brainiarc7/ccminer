@@ -18,16 +18,31 @@ About source code dependencies
 
 This project requires some libraries to be built :
 
-- OpenSSL (prebuilt for win)
+- OpenSSL (Prebuilt for Windows)
 
-- Curl (prebuilt for win)
+- Curl (Prebuilt for Windows)
 
-- pthreads (prebuilt for win)
+- pthreads (Prebuilt for Windows)
 
-The tree now contains recent prebuilt openssl and curl .lib for both x86 and x64 platforms (windows).
+The tree now contains recent prebuilt openssl and curl .lib for both x86 and x64 platforms (Windows).
 
 To rebuild them, you need to clone this repository and its submodules :
     git clone https://github.com/peters/curl-for-windows.git compat/curl-for-windows
 
 There is also a [Tutorial for windows](http://cudamining.co.uk/url/tutorials/id/3) on [CudaMining](http://cudamining.co.uk) website.
 
+Notes:
+
+This branch is optimized for NVIDIA Maxwell GPUs (GM100, GM200s).
+
+If you're using an older GPU (Kepler and older architectures), please use [this fork instead](https://github.com/tpruvot/ccminer)
+
+Compilation Requirements:
+
+Install NVIDIA CUDA 6.5 SDK (Tested to be working with NVIDIA CUDA 7.0 toolkit RC1 also).
+I've tested this fork on Linux (Ubuntu 14.04 LTS).
+A Windows build of the same can be found [here](http://cryptomining-blog.com/wp-content/files/ccminer-maxwell-1.5-git-sp-mod.zip)
+
+Thanks and regards,
+
+Brainiarc7.
